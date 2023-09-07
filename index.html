@@ -19,7 +19,7 @@
             required
           /><br />
           <label for="email">Email</label><br />
-          <input type="text" placeholder="Email" id="email" required /><br />
+          <input type="text" placeholder="Email" id="email" required > <br/>
           <label for="password">Password</label><br />
           <input
             type="password"
@@ -27,20 +27,20 @@
             id="password"
             required
           /><br /><br />
-          <button>Sign Up</button>
+          <button id="signup-btn">Sign Up</button>
         </div>
         <div class="login-cont">
           <h1>Login</h1>
           <label for="email">Email</label><br />
-          <input type="text" placeholder="Email" id="email1" required /><br />
+          <input type="text" placeholder="Email" id="email-login" required /><br />
           <label for="password">Password</label><br />
           <input
             type="password"
             placeholder="Password"
-            id="password1"
+            id="password-login"
             required
           /><br /><br />
-          <button>Login</button>
+          <button id="login-btn">Login</button>
         </div>
       </div>
       <video autoplay muted loop id="video-background">
@@ -51,7 +51,7 @@
       </video>
     </div>
 
-    <script src="config.js"></script>
-    <script src="app.js"></script>
+    <script type="module" src="./js/config.js"></script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
