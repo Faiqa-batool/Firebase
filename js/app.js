@@ -3,10 +3,10 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 
 const auth = getAuth();
 const signup = () => {
-    let email_login = document.getElementById("email-login");
-    let password_login = document.getElementById("password-login");
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
 
-    createUserWithEmailAndPassword(auth, email_login.value, password_login.value)
+    createUserWithEmailAndPassword(auth, email.value, password.value)
     .then((resolve)=>{
         alert("Successfully signed up!")
 
@@ -18,11 +18,11 @@ const signup = () => {
 let signup_btn = document.getElementById("signup-btn");
 signup_btn.addEventListener("click", signup);
 const login = () => {
-    let username = document.getElementById("username");
-    let email = document.getElementById("email");
-    let password = document.getElementById("password");
+    
+    let email_login = document.getElementById("email-login");
+    let password_login = document.getElementById("password-login");
 
-    signInWithEmailAndPassword(auth, email.value, password.value)
+    signInWithEmailAndPassword(auth, email_login.value, password_login.value)
     .then((resolve)=>{
         alert("Successfully Loged In!")
 
