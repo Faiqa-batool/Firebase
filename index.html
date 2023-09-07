@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="account">
+        <div class="signup-cont">
+          <h1>Sign Up</h1>
+          <label for="username"> Username</label><br />
+          <input
+            type="text"
+            placeholder="Username"
+            id="username"
+            required
+          /><br />
+          <label for="email">Email</label><br />
+          <input type="text" placeholder="Email" id="email" required /><br />
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            required
+          /><br /><br />
+          <button>Sign Up</button>
+        </div>
+        <div class="login-cont">
+          <h1>Login</h1>
+          <label for="email">Email</label><br />
+          <input type="text" placeholder="Email" id="email1" required /><br />
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            placeholder="Password"
+            id="password1"
+            required
+          /><br /><br />
+          <button>Login</button>
+        </div>
+      </div>
+      <video autoplay muted loop id="video-background">
+        <source
+          src="./assets/pexels-black-bird-17671672 (2160p).mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

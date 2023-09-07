@@ -1,0 +1,46 @@
+/* Add this to your existing CSS file or create a new one */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.main {
+    position: relative;
+    height: 100vh; /* Make sure the .signup div covers the entire viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensures the form is on top of the video */
+}
+
+.account{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup-cont, .login-cont{
+    flex: 1;
+    padding: 20px; /* Add spacing around the content */
+  /* border: 1px solid #ccc; Add borders for clarity */
+  /* background-color: #f9f9f9; Add a background color for differentiation */
+}
+
+.signup-cont h1, .login-cont h1 {
+    font-size: 24px; /* Customize the heading size if needed */
+    color: #ffffff;
+  }
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire .signup div */
+    z-index: -1; /* Places the video behind other content */
+}
+
+/* Add any additional styling for your sign-up form */
